@@ -1,4 +1,4 @@
-This is is the secondary analysis pipeline in Cromwell/WDL workflow for running QC and BISMARK on DNA methylation data
+This is a sorting script
 
 Example Usage:
 
