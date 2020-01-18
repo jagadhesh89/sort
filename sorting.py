@@ -3,7 +3,7 @@ import numpy
 from sortalgorithm import *
 
 def main(inpArgs):
-    AllowedSorts=["BUBBLE","SELECT","INSERTION","QUICK"]
+    AllowedSorts=["BUBBLE","SELECT"]
     SpecifiedSort = inpArgs.sortmethod
     SpecifiedSort = SpecifiedSort.upper()
     if SpecifiedSort not in AllowedSorts:
