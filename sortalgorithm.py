@@ -2,7 +2,7 @@ class SortAlgorithm:
     def __init__(self):
         pass
         
-    def BubblesSort(self,InputArray):
+    def BubbleSort(self,InputArray):
         self.InputArray = InputArray
         self.GreaterConditionMet = 0
         for i in range(0,len(self.InputArray)-1):
