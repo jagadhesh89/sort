@@ -11,4 +11,4 @@ steps:
 - script: |
     python test_sortalgorithm.py
     
-  displayName: 'test sorting'
+  displayName: 'test sorting algorithm'
