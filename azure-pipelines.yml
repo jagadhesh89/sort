@@ -11,3 +11,8 @@ steps:
     addToPath: true
     architecture: 'x64'
 
+- task: PythonScript@0
+  inputs:
+    scriptSource: 'filePath'
+    scriptPath: 'test_sortalgorithm.py'
+    failOnStderr: true
