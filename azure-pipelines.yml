@@ -16,4 +16,8 @@ steps:
     testResultsFiles: '**/TEST-*.xml'
     failTaskOnFailedTests: true
 
-- script: python test_sortalgorithm.py
+- task: SSH@0
+  inputs:
+    runOptions: 'commands'
+    commands: 'python test_sortalgorithm.py'
+    readyTimeout: '20000'
