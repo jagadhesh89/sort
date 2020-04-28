@@ -4,20 +4,10 @@
 # https://docs.microsoft.com/azure/devops/pipelines/languages/python
 
 steps:
+
 - task: UsePythonVersion@0
   inputs:
-    versionSpec: '3.6'
+    versionSpec: '3.x'
+    addToPath: true
+    architecture: 'x64'
 
-
-
-- task: PublishTestResults@2
-  inputs:
-    testResultsFormat: 'JUnit'
-    testResultsFiles: '**/TEST-*.xml'
-    failTaskOnFailedTests: true
-
-- task: SSH@0
-  inputs:
-    runOptions: 'commands'
-    commands: 'python test_sortalgorithm.py'
-    readyTimeout: '20000'
