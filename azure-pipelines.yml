@@ -8,7 +8,7 @@ steps:
   inputs:
     versionSpec: '3.6'
 
-- script: |
-    python test_sortalgorithm.py
-    
-  displayName: 'test sorting algorithm'
+- task: PythonScript@0
+  inputs:
+    scriptSource: 'filePath'
+    scriptPath: 'test_sortalgorithm.py'
