@@ -8,12 +8,12 @@ steps:
   inputs:
     versionSpec: '3.6'
 
-- task: PythonScript@0
-  inputs:
-    scriptSource: 'filePath'
-    scriptPath: 'test_sortalgorithm.py'
+
+
 - task: PublishTestResults@2
   inputs:
     testResultsFormat: 'JUnit'
     testResultsFiles: '**/TEST-*.xml'
     failTaskOnFailedTests: true
+
+- script: python test_sortalgorithm.py
