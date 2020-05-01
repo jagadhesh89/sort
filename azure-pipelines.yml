@@ -16,3 +16,4 @@ steps:
     scriptSource: 'filePath'
     scriptPath: 'test_sortalgorithm.py'
     failOnStderr: true
+    
